@@ -88,23 +88,8 @@ const Encabezado = () => {
                 <strong>Inicio</strong>
               </Nav.Link>
 
-              <Nav.Link
-                onClick={() => handleNavigate("/educacion")}
-                className={isCollapsed ? "color-texto-marca" : "text-white"}
-              >
-                {isCollapsed && <i className="bi bi-journal-text me-2"></i>}
-                <strong>Educación</strong>
-              </Nav.Link>
-
               {rolUsuario === "usuario" && (
                 <>
-                  <Nav.Link
-                    onClick={() => handleNavigate("/sintomas")}
-                    className={isCollapsed ? "color-texto-marca" : "text-white"}
-                  >
-                    {isCollapsed && <i className="bi bi-thermometer-half me-2"></i>}
-                    <strong>Síntomas</strong>
-                  </Nav.Link>
 
                   <Nav.Link
                     onClick={() => handleNavigate("/consultas")}
@@ -123,35 +108,11 @@ const Encabezado = () => {
                   </Nav.Link>
 
                   <Nav.Link
-                    onClick={() => handleNavigate("/presion")}
-                    className={isCollapsed ? "color-texto-marca" : "text-white"}
-                  >
-                    {isCollapsed && <i className="bi bi-heart-pulse-fill me-2"></i>}
-                    <strong>Presión Arterial</strong>
-                  </Nav.Link>
-
-                  <Nav.Link
                     onClick={() => handleNavigate("/chat")}
                     className={isCollapsed ? "color-texto-marca" : "text-white"}
                   >
                     {isCollapsed && <i className="bi bi-chat-left-text me-2"></i>}
                     <strong>Consultas</strong>
-                  </Nav.Link>
-
-                  <Nav.Link
-                    onClick={() => handleNavigate("/alertasmedicacion")}
-                    className={isCollapsed ? "color-texto-marca" : "text-white"}
-                  >
-                    {isCollapsed && <i className="bi bi-exclamation-triangle-fill me-2"></i>}
-                    <strong>Alertas</strong>
-                  </Nav.Link>
-
-                  <Nav.Link
-                    onClick={() => handleNavigate("/notificacionpaciente")}
-                    className={isCollapsed ? "color-texto-marca" : "text-white"}
-                  >
-                    {isCollapsed && <i className="bi bi-capsule me-2"></i>}
-                    <strong>Notificación</strong>
                   </Nav.Link>
                 </>
               )}
@@ -180,14 +141,6 @@ const Encabezado = () => {
                   >
                     {isCollapsed && <i className="bi bi-people me-2"></i>}
                     <strong>Pacientes</strong>
-                  </Nav.Link>
-
-                  <Nav.Link
-                    onClick={() => handleNavigate("/alertasderiesgo")}
-                    className={isCollapsed ? "color-texto-marca" : "text-white"}
-                  >
-                    {isCollapsed && <i className="bi bi-exclamation-triangle-fill me-2"></i>}
-                    <strong>Alertas de Riesgo</strong>
                   </Nav.Link>
                 </>
               )}
