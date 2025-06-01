@@ -154,7 +154,7 @@ const finalizarConsulta = async (solicitud) => {
     <br />
     <br />
         <Spinner animation="border" variant="primary" />
-        <p className="mt-3">Cargando información del doctor...</p>
+        <p className="mt-3">Cargando información del Recurso...</p>
       </Container>
     );
   }

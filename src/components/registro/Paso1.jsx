@@ -89,7 +89,7 @@ const Paso1 = ({ datos, onChange, onNext }) => {
         <Form.Select name="rol" value={datos.rol} onChange={handleChange}>
           <option value="">Seleccione</option>
           <option value="usuario">Usuario</option>
-          <option value="doctor">Doctor</option>
+          <option value="doctor">Recurso</option>
         </Form.Select>
       </Form.Group>
 

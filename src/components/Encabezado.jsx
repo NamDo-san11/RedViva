@@ -112,7 +112,7 @@ const Encabezado = () => {
                     className={isCollapsed ? "color-texto-marca" : "text-white"}
                   >
                     {isCollapsed && <i className="bi bi-file-person-fill me-2"></i>}
-                    <strong>Doctores</strong>
+                    <strong>Recurso</strong>
                   </Nav.Link>
 
                   <Nav.Link

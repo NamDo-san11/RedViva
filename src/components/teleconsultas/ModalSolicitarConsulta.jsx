@@ -25,7 +25,7 @@ const ModalSolicitarConsulta = ({ show, onClose, doctor, onEnviar }) => {
       </Modal.Header>
       <Modal.Body>
         <p>
-          Doctor seleccionado: <strong>{doctor.nombre}</strong>
+          Recurso seleccionado: <strong>{doctor.nombre}</strong>
         </p>
         <Form.Group className="mb-3">
           <Form.Label>Motivo de la consulta</Form.Label>

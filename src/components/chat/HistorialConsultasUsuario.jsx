@@ -29,7 +29,7 @@ const HistorialConsultasUsuario = ({ consultas, onDelete, onEdit }) => {
 
             {consulta.respuesta?.trim() && (
               <div className="mt-3 p-3 bg-light border border-success rounded">
-                <strong className="text-success">Respuesta del doctor:</strong>
+                <strong className="text-success">Respuesta del Recurso:</strong>
                 <p className="mb-0">{consulta.respuesta}</p>
               </div>
             )}

@@ -110,7 +110,7 @@ const ListaDoctoresDisponiblesView = () => {
     <Container className="mt-4">
       <br />
       <br />
-      <h2 className="text-center mb-4">Doctores Disponibles</h2>
+      <h2 className="text-center mb-4">Recurso Disponibles</h2>
 
       {!perfilVerificado ? (
         <div className="text-center">

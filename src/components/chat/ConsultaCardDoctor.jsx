@@ -35,7 +35,7 @@ const ConsultaCardDoctor = ({ consulta, onResponder }) => {
 
         <Form onSubmit={handleSubmit}>
           <Form.Group className="mb-2">
-            <Form.Label><strong>Respuesta del doctor:</strong></Form.Label>
+            <Form.Label><strong>Respuesta del Recurso:</strong></Form.Label>
             <Form.Control
               as="textarea"
               rows={2}

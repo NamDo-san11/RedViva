@@ -32,8 +32,6 @@ const PerfilUsuarioCard = ({ datos, onEditar }) => {
       <div className="perfil-info">
         <h5>{nombre}</h5>
         <p><span className="perfil-label">Correo:</span> {correo}</p>
-        <p><span className="perfil-label">Rol:</span> {rol}</p>
-
         {rol === "usuario" && (
           <>
             <p><span className="perfil-label">Edad:</span> {edad} años</p>
