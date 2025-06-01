@@ -11,3 +11,55 @@
   color: white !important;
   font-weight: bold;
 }
+
+df-messenger {
+  /* Botón flotante */
+  --df-messenger-button-color: #0A111C;
+  --df-messenger-button-icon: url("https://cdn-icons-png.flaticon.com/128/3704/3704886.png");
+  --df-messenger-button-width: 60px;
+  --df-messenger-button-height: 60px;
+  --df-messenger-button-border-radius: 50%;
+  --df-messenger-button-box-shadow: 0 6px 16px rgba(0, 0, 0, 0.25);
+  --df-messenger-button-bottom: 90px;
+  --df-messenger-button-right: 20px;
+
+  /* Ventana del chat */
+  --df-messenger-chat-background-color: #101820; /* negro azulado elegante */
+  --df-messenger-border-radius: 20px;
+  --df-messenger-font-color: #E3E8F0;
+
+  /* Título del chat */
+  --df-messenger-chat-title-color: #FFFFFF;
+  --df-messenger-chat-title-font-family: 'Segoe UI', 'Roboto', sans-serif;
+  --df-messenger-chat-title: #26425A;
+
+  /* Burbujas de mensajes */
+  --df-messenger-bot-message: #1E293B;       /* azul-gris oscuro */
+  --df-messenger-user-message: #719EC0;      /* azul pastel protagonista */
+  
+  /* Input box */
+  --df-messenger-input-box-color: #ffffff;
+  --df-messenger-input-box-border-radius: 12px;
+  --df-messenger-input-box-font-color: #ffffff;
+
+  /* Otros */
+  font-family: 'Segoe UI', sans-serif;
+  z-index: 9999;
+  position: fixed !important;
+}
+
+
+/* Mobile ajustes adicionales */
+@media (max-width: 576px) {
+  df-messenger {
+    --df-messenger-button-bottom: 120px;
+  }
+
+  body df-messenger::part(chatbox) {
+    margin-top: 60px !important;
+  }
+}
+
+header, .navbar {
+  z-index: 999;
+}
