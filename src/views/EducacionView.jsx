@@ -52,6 +52,9 @@ const EducacionITS = () => {
 
   return (
     <Container className="py-5">
+    <br />
+    <br />
+    <br />
       <h2 className="text-center mb-4 text-black fw-bold">
         Información sobre Infecciones de Transmisión Sexual (ITS)
       </h2>
