@@ -1,46 +1,57 @@
 .perfil-card {
-  background-color: #ffffff;
-  border-radius: 20px;
-  padding: 2rem;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background-color: white;
+  color: #212529;
+  border: 2px solid #dc3545; /* rojo */
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(220, 53, 69, 0.2);
+  padding: 20px;
+  max-width: 700px;
+  margin: auto;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
 }
 
 .perfil-foto {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
+  width: 120px;
+  height: 120px;
   object-fit: cover;
-  border: 3px solid #0a58ca;
+  border-radius: 50%;
+  border: 3px solid #ffc107; /* amarillo */
+  margin-bottom: 20px;
 }
 
 .perfil-info {
-  flex-grow: 1;
-  min-width: 250px;
+  text-align: center;
+  width: 100%;
 }
 
 .perfil-info h5 {
   font-size: 1.5rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
+  color: #dc3545; /* rojo */
+  margin-bottom: 10px;
 }
 
 .perfil-info p {
-  margin-bottom: 0.3rem;
+  margin: 5px 0;
   font-size: 1rem;
-}
-
-.perfil-botones {
-  margin-top: 1.5rem;
-  display: flex;
-  gap: 1rem;
 }
 
 .perfil-label {
   font-weight: bold;
-  color: #0a58ca;
+  color: #dc3545;
+}
+
+.perfil-botones {
+  margin-top: 20px;
+}
+
+.perfil-botones .btn-outline-primary {
+  border-color: #dc3545;
+  color: #dc3545;
+}
+
+.perfil-botones .btn-outline-primary:hover {
+  background-color: #dc3545;
+  color: white;
 }

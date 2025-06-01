@@ -47,13 +47,13 @@
 
 .btn-primary:hover {
   background-color: #e6b800;
-  border-color: #e6b800;
+  border-color: #ddff00;
   color: #000;
 }
 
 .btn-outline-secondary {
-  border-color: #ffcc00;
-  color: #ffcc00;
+  border-color: #ddff00;
+  color: #ddff00;
 }
 
 .btn-outline-secondary:hover {

@@ -1,47 +1,34 @@
-.titulo-pacientes {
-  color: #000;
-  font-weight: bold;
-  font-size: 1.8rem;
-}
-
 .filtro-pacientes {
-  max-width: 400px;
-  margin-bottom: 1rem;
+  margin-bottom: 20px;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  transition: border-color 0.3s ease-in-out;
 }
 
-@media (max-width: 576px) {
-  .filtro-pacientes {
-    width: 100%;
-  }
-
-  .titulo-pacientes {
-    font-size: 1.5rem;
-    text-align: center;
-  }
-
-  table thead {
-    display: none;
-  }
-
-  table tr {
-    display: block;
-    margin-bottom: 1rem;
-    border: 1px solid #ddd;
-    border-radius: 0.5rem;
-    padding: 0.5rem;
-  }
-
-  table td {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.4rem 0.8rem;
-    border: none;
-  }
-
-  table td::before {
-    content: attr(data-label);
-    font-weight: bold;
-    color: #555;
-  }
+.filtro-pacientes:focus {
+  border-color: #9f0000;
+  box-shadow: 0 0 5px rgba(159, 0, 0, 0.5);
 }
-    
+
+table {
+  font-size: 0.95rem;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+thead {
+  background: linear-gradient(90deg, #9f0000, #ddff00);
+  color: #212327;
+  font-weight: bold;
+}
+
+tbody tr:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.text-muted {
+  font-style: italic;
+}

@@ -1,20 +1,43 @@
-.datos-usuario-form input,
-.datos-usuario-form select,
-.datos-usuario-form textarea {
+/* PasoDatosUsuario.css */
+
+form {
+  background-color: #ffffff; /* blanco */
+  padding: 2rem;
   border-radius: 12px;
-  border: 2px solid #dcdcdc;
-  font-size: 1rem;
-  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.datos-usuario-form input:focus,
-.datos-usuario-form select:focus,
-.datos-usuario-form textarea:focus {
-  border-color: #5B6F8F;
-  box-shadow: 0 0 5px rgba(91, 111, 143, 0.3);
+form label {
+  font-weight: 600;
+  color: #c0392b; /* rojo intenso */
 }
 
-.datos-usuario-form label {
-  margin-bottom: 6px;
+form .form-control,
+form .form-select {
+  border: 2px solid #c0392b; /* rojo */
+  border-radius: 8px;
+  background-color: #fffbea; /* blanco con tinte amarillo */
   color: #333;
+  transition: border-color 0.3s;
 }
+
+form .form-control:focus,
+form .form-select:focus {
+  border-color: #f1c40f; /* amarillo */
+  box-shadow: 0 0 0 0.2rem rgba(241, 196, 15, 0.25);
+}
+
+form .form-control.is-invalid,
+form .form-select.is-invalid {
+  border-color: #e74c3c; /* rojo error */
+  background-color: #fff0f0;
+}
+
+form .form-control::placeholder {
+  color: #aaa;
+}
+
+form .form-text {
+  color: #e74c3c; /* texto de error */
+}
+

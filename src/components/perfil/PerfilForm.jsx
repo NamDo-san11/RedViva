@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import { Form, Button, Row, Col, Image } from "react-bootstrap";
 
+
 const PerfilForm = ({ datos, onChange, onGuardar, onCancelar }) => {
   const inputFoto = useRef();
 

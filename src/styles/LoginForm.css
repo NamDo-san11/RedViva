@@ -1,0 +1,48 @@
+/* LoginForm.css */
+
+.login-card {
+  background-color: #fffbe6; /* Blanco cálido */
+  border: 2px solid #ddff00; /* Amarillo */
+  border-radius: 12px;
+}
+
+.login-card h3 {
+  color: #7d0000; /* Rojo oscuro (mismo que navbar) */
+  font-weight: bold;
+}
+
+.login-label {
+  color: #7d0000;
+  font-weight: 600;
+}
+
+.login-input {
+  border: 2px solid #9f0000;
+  border-radius: 8px;
+  background-color: #ffffff;
+  color: #212327;
+}
+
+.login-input:focus {
+  border-color: #ddff00;
+  box-shadow: 0 0 0 0.2rem rgba(221, 255, 0, 0.3);
+}
+
+.login-btn {
+  border: 2px solid #7d0000;
+  color: #7d0000;
+  font-weight: bold;
+  background-color: transparent;
+}
+
+.login-btn:hover {
+  background-color: #7d0000;
+  color: #ffffff;
+}
+
+.login-alert {
+  background-color: #fff1f1;
+  border-color: #9f0000;
+  color: #7d0000;
+  font-weight: 600;
+}

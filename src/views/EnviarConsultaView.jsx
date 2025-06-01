@@ -124,6 +124,7 @@ const EnviarConsultaView = () => {
     <div className="container mt-5">
       <br />
       <br />
+      <br />
       <ToastContainer position="top-end" className="p-3">
         {toasts.map((toast) => (
           <Toast key={toast.id} bg={toast.tipo} delay={3000} autohide>

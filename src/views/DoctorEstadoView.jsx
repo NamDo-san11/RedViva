@@ -150,6 +150,9 @@ const finalizarConsulta = async (solicitud) => {
   if (loading) {
     return (
       <Container className="text-center mt-5">
+            <br />
+    <br />
+    <br />
         <Spinner animation="border" variant="primary" />
         <p className="mt-3">Cargando información del doctor...</p>
       </Container>
@@ -158,6 +161,8 @@ const finalizarConsulta = async (solicitud) => {
 
   return (
     <Container className="mt-4">
+    <br />
+    <br />
     <br />
       {!perfil ? (
         <div className="d-flex justify-content-center">

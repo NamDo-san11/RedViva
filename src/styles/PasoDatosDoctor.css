@@ -1,19 +1,64 @@
-.datos-doctor-form input,
-.datos-doctor-form select,
-.datos-doctor-form textarea {
+/* PasoDatosDoctor.css */
+
+form {
+  background-color: #ffffff; /* blanco */
+  padding: 2rem;
   border-radius: 12px;
-  border: 2px solid #dcdcdc;
-  font-size: 1rem;
-  padding: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
 }
 
-.datos-doctor-form input:focus,
-.datos-doctor-form select:focus {
-  border-color: #719EC0;
-  box-shadow: 0 0 5px rgba(113, 158, 192, 0.4);
+form label {
+  font-weight: 600;
+  color: #c0392b; /* rojo principal */
 }
 
-.datos-doctor-form label {
-  margin-bottom: 6px;
+form .form-control,
+form .form-select {
+  border: 2px solid #c0392b; /* rojo */
+  border-radius: 8px;
+  background-color: #fffbea; /* fondo blanco amarillento */
   color: #333;
+  transition: border-color 0.3s ease;
+}
+
+form .form-control:focus,
+form .form-select:focus {
+  border-color: #f1c40f; /* amarillo */
+  box-shadow: 0 0 0 0.2rem rgba(241, 196, 15, 0.25);
+}
+
+form .form-control.is-invalid,
+form .form-select.is-invalid {
+  border-color: #e74c3c; /* rojo error */
+  background-color: #fff0f0;
+}
+
+form .form-control::placeholder {
+  color: #aaa;
+}
+
+form .form-text {
+  color: #e74c3c;
+}
+
+button.btn-success {
+  background-color: #f1c40f; /* amarillo */
+  color: #000;
+  font-weight: bold;
+  border: none;
+}
+
+button.btn-success:hover {
+  background-color: #f39c12;
+  color: #000;
+}
+
+button.btn-secondary {
+  background-color: #c0392b;
+  color: #fff;
+  border: none;
+}
+
+button.btn-secondary:hover {
+  background-color: #e74c3c;
 }

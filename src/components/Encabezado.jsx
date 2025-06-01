@@ -88,6 +88,14 @@ const Encabezado = () => {
                 <strong>Inicio</strong>
               </Nav.Link>
 
+              <Nav.Link
+                onClick={() => handleNavigate("/educacion")}
+                className={isCollapsed ? "color-texto-marca" : "text-white"}
+              >
+                {isCollapsed && <i className="bi bi-window-sidebar me-2"></i>}
+                <strong>Educación</strong>
+              </Nav.Link>
+
               {rolUsuario === "usuario" && (
                 <>
 
@@ -112,7 +120,7 @@ const Encabezado = () => {
                     className={isCollapsed ? "color-texto-marca" : "text-white"}
                   >
                     {isCollapsed && <i className="bi bi-chat-left-text me-2"></i>}
-                    <strong>Consultas</strong>
+                    <strong>Chat</strong>
                   </Nav.Link>
                 </>
               )}

@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import "../../styles/PerfilUsuarioCard.css";
+import ftdefault from "../../assets/default.jpeg";
 
 const PerfilUsuarioCard = ({ datos, onEditar }) => {
   const {
@@ -23,7 +24,7 @@ const PerfilUsuarioCard = ({ datos, onEditar }) => {
   return (
     <div className="perfil-card">
       <img
-        src={foto || "https://via.placeholder.com/150"}
+        src={foto || ftdefault}
         alt="Perfil"
         className="perfil-foto"
       />

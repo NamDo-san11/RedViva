@@ -11,6 +11,7 @@ import EnviarConsultaView from "./views/EnviarConsultaView";
 import ListaPacientesView from "./views/ListaPacientesView";
 import DoctorEstadoView from "./views/DoctorEstadoView";
 import ListaDoctoresDisponiblesView from "./views/ListaDoctoresDisponiblesView";
+import EducacionView from "./views/EducacionView";
 import MisConsultasView from "./views/MisConsultasView";
 import ReactGA from "react-ga4";
 import './App.css';
@@ -37,6 +38,7 @@ function App() {
               <Route path="/" element={<Login />} />
               <Route path="/registro" element={<RegisterView />} />
               <Route path="/inicio" element={<ProtectedRoute element={<Inicio />} />} />
+              <Route path="/educacion" element={<ProtectedRoute element={<EducacionView />} />} />
               <Route path="/chat" element={<ProtectedRoute element={<EnviarConsultaView />} />} />
               <Route path="/pacientes" element={<ProtectedRoute element={<ListaPacientesView />} />} />
               <Route path="/docestado" element={<ProtectedRoute element={<DoctorEstadoView />} />} />
